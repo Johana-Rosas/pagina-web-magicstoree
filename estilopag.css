@@ -1,0 +1,510 @@
+:root{
+    --moradohead: blueviolet;
+    --lila: rgb(185, 124, 241);
+    --rositabody: rgb(242, 194, 238);
+    --moradofooter:  rgb(99, 16, 177);
+    --cafesito:   rgb(194, 157, 78);
+  
+}
+
+*{
+    box-sizing: border-box;
+    
+}
+
+
+@font-face {
+    font-family: milenia ;
+    src: url(../fuentes/Milenia.ttf);
+}
+
+@font-face {
+    font-family:  Cchaps;
+    src: url(../fuentes/ChapuChaps.otf);
+}
+
+@font-face {
+    font-family:  HME;
+    src: url(../fuentes/Hug\ Me\ Tight\ -\ TTF.ttf);
+}
+@font-face {
+    font-family:  PUPPY;
+    src: url(../fuentes/Puppy.otf);
+}
+@font-face {
+    font-family:  SWEET;
+    src: url(../fuentes/Sweet\ Smile.ttf);
+}
+
+
+
+body{
+    margin: 0;
+    background-color: var(--rositabody);
+}
+
+P{
+    font-size: 1.5em;
+    font-family:  SWEET;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: var(--moradohead);
+
+}
+
+header .logo{
+    font-family: milenia ;
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 1.5em;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-family:  SWEET;
+}
+
+
+header a:hover{
+    color: white;
+}
+
+.logo1{
+    height: 80px;
+    width: 80px;
+    background-image: url(./img-albums/imagenes-y-videos/logo\ Magic\ Store.jpg);
+    background-size: contain;
+    border-radius: 40px;
+}
+
+
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 30px;
+}
+main{
+    background-color: var(--lila);
+}
+
+main a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.65em;
+    font-family:  SWEET;
+}
+
+main a:hover{
+    color: white;
+}
+
+
+
+.slider{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    overflow: hidden;
+   
+}
+
+.slider ul{
+    padding: 0;
+    margin: 0%;
+    display: flex;
+    width: 400%;
+
+    animation: slider 10s infinite alternate ;
+    animation-timing-function: linear;
+
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider li img{
+   width: 100%;
+   
+
+}
+
+
+@keyframes slider{
+    0%{ margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+.galeria{
+    margin-top: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+ }
+ 
+ .lista-imagenes img{
+      width: 100px;
+      object-fit: cover;
+      height: 100px;
+     margin-right: 10px;
+ }
+ 
+ .lista-imagenes{
+     display: flex;
+     overflow-y: auto;
+    margin-top: 0;
+ }
+
+ .galeria2{
+    margin-top: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+ }
+ 
+ .lista2-imagenes img{
+    width: 100px;
+    object-fit: cover;
+    height: 100px;
+   margin-right: 10px;
+}
+
+.lista2-imagenes{
+    display: flex;
+    overflow-y: auto;
+   margin-top: 0;
+}
+
+.galeria3{
+    margin-top: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+ }
+ 
+ .lista3-imagenes img{
+    width: 100px;
+    object-fit: cover;
+    height: 100px;
+   margin-right: 10px;
+}
+
+.lista3-imagenes{
+    display: flex;
+    overflow-y: auto;
+   margin-top: 0;
+}
+
+
+footer{
+    background-color: var(--moradofooter);
+
+}
+
+footer p{
+    margin: 0;
+
+}
+
+footer .container{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a{
+    font-size: 1em;
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    margin-top: auto;
+    font-family:  HME;
+}
+
+footer a:hover{
+    color: white;
+}
+
+.logo2{
+    height: 80px;
+    width: 80px;
+    background-image: url(./img-albums/imagenes-y-videos/logo\ Magic\ Store.jpg);
+    background-size: contain;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+}
+
+.insta{
+    height: 80px;
+    width: 80px;
+    background-image: url(./img-albums/imagenes-y-videos/TXT_Lightstick_Sticker-removebg-preview.png);
+    background-size: contain;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+}
+
+.face{
+    height: 70px;
+    width: 70px;
+    background-image: url(./img-albums/imagenes-y-videos/descarga__22_-removebg-preview.png);
+    background-size: contain;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+}
+
+.polidepriv{
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+button{
+    font-size: 1.3em;
+    font-family:  HME;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: var(--moradohead);
+}
+
+button:hover{
+    background-color: var(--moradofooter);
+}
+
+.tinitan{
+    width: 250px;
+    height: 250px;
+    background-image: url(./img-albums/imagenes-y-videos/TINY_TAN-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 10px;
+
+    animation: tinitan 3s ease 0s 1 normal forwards;
+}
+
+@keyframes tinitan {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 100% 50%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}
+
+
+.container-carrito{
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    background-image: url(./img-albums/imagenes-y-videos/Captura\ de\ pantalla\ \(169\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    border: 20px solid var(--cafesito) ;
+    padding-top: 20px;
+
+    animation: carrito 3s ease 0s infinite normal forwards;
+}
+
+@keyframes carrito {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+
+.lightstick{
+    width: 250px;
+    height: 250px;
+    background-image: url(./img-albums/imagenes-y-videos/lightstick-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 10px;
+
+    animation: lightstick 3s ease 0s infinite normal forwards;
+}
+
+@keyframes lightstick {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 100%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}
+
+@media (min-width:720px){
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+
+    }
+
+    main .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer .container{
+        flex-direction: row;
+        justify-content: space-between;
+    };
+
+    .slider{
+       display: flex;
+       justify-content: center;
+       height: 500px;
+
+    }
+
+    .galeria{
+        flex-direction: row;
+        justify-content: space-between;
+       
+    }
+    .lista-imagenes{
+        display: flex;
+       justify-content: center;
+       
+    }
+
+    .galeria2{
+        flex-direction: row;
+        justify-content: space-between;
+       
+    }
+    .lista2-imagenes{
+        display: flex;
+       justify-content: center;
+       
+    }
+
+    .galeria3{
+        flex-direction: row;
+        justify-content: space-between;
+       
+    }
+    .lista3-imagenes{
+        display: flex;
+       justify-content: center;
+       
+    }
+}
